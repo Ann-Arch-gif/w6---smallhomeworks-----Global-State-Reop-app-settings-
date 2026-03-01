@@ -15,6 +15,7 @@ class SettingsScreen extends StatelessWidget {
     AppSettingsState settingsState = context.watch<AppSettingsState>();
 
     return Container(
+      color: settingsState.theme.backgroundColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
